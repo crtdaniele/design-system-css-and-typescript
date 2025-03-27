@@ -1,0 +1,1 @@
+export type Breakpoints = '--breakpoint-xs' | '--breakpoint-sm' | '--breakpoint-md' | '--breakpoint-lg' | '--breakpoint-xl';

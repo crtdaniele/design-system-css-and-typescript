@@ -1,0 +1,1 @@
+export type Colors = '--color-primary' | '--color-secondary' | '--color-background';

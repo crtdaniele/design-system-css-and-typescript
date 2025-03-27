@@ -1,0 +1,1 @@
+export type FontFamilies = '--font-family-primary' | '--font-family-secondary';

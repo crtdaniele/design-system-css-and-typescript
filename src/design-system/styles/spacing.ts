@@ -1,0 +1,1 @@
+export type Spacing = '--spacing-xxs' | '--spacing-xs' | '--spacing-sm' | '--spacing-md' | '--spacing-lg' | '--spacing-xl' | '--spacing-xxl';

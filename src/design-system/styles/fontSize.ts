@@ -1,0 +1,1 @@
+export type FontSizes = '--font-size-xs' | '--font-size-sm' | '--font-size-md' | '--font-size-lg' | '--font-size-xl';

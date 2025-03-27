@@ -1,0 +1,1 @@
+export type Shadows = '--shadow-sm' | '--shadow-md' | '--shadow-lg';
