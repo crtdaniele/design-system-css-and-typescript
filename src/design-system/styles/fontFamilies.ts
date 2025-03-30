@@ -1,1 +1,6 @@
-export type FontFamilies = '--font-family-primary' | '--font-family-secondary';
+export enum FontFamiliesEnum {
+  primary = "--font-family-primary",
+  secondary = "--font-family-secondary"
+}
+
+export type FontFamilies = keyof typeof FontFamiliesEnum;

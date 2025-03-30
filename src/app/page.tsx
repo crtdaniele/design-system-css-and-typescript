@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Button fontSize="--font-size-xs" color="--color-primary">This is a Button</Button>
+        <Button bgColor="primary">This is a Button</Button>
       </main>
       <footer className={styles.footer}>
         AAA

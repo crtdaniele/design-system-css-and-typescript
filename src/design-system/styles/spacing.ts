@@ -1,1 +1,11 @@
-export type Spacing = '--spacing-xxs' | '--spacing-xs' | '--spacing-sm' | '--spacing-md' | '--spacing-lg' | '--spacing-xl' | '--spacing-xxl';
+export enum SpacingEnum {
+  xxs = "--spacing-xxs",
+  xs = "--spacing-xs",
+  sm = "--spacing-sm",
+  md = "--spacing-md",
+  lg = "--spacing-lg",
+  xl = "--spacing-xl",
+  xxl = "--spacing-xxl"
+}
+
+export type Spacing = keyof typeof SpacingEnum;

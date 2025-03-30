@@ -1,25 +1,27 @@
 import React from "react";
-import { Colors } from "../styles/colors";
-import { FontSizes } from "../styles/fontSize";
-import { Spacing } from "../styles/spacing";
+import { Colors, ColorsEnum } from "../styles/colors";
+import { FontSizes, FontSizesEnum } from "../styles/fontSize";
+import { Spacing, SpacingEnum } from "../styles/spacing";
 
 type ButtonProps = {
   children: React.ReactNode;
-  color?: Colors;
+  bgColor?: Colors;
   fontSize?: FontSizes;
   padding?: Spacing;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button: React.FC<ButtonProps> = ({ children, color = "--color-primary", fontSize = "--font-size-md", padding = "--spacing-md", ...props }) => {
+const Button: React.FC<ButtonProps> = ({ children, bgColor, fontSize, padding, ...props }) => {
   return (
     <button
       style={{
-        backgroundColor: `var(${color})`,
+        backgroundColor: bgColor ? `var(${ColorsEnum[bgColor]})` : "transparent",
         color: "white",
-        fontSize: `var(${fontSize})`,
-        padding: `var(${padding})`,
+        fontSize: fontSize ? `var(${FontSizesEnum[fontSize]})` : "inherit",
+        padding: padding ? `var(${SpacingEnum[padding]})` : "0.5rem",
         borderRadius: "8px",
         fontFamily: "var(--font-primary)",
+        border: "none",
+        cursor: "pointer",
       }}
       {...props}
     >

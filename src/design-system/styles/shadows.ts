@@ -1,1 +1,7 @@
-export type Shadows = '--shadow-sm' | '--shadow-md' | '--shadow-lg';
+export enum ShadowsEnum {
+  sm = "--shadow-sm",
+  md = "--shadow-md",
+  lg = "--shadow-lg"
+}
+
+export type Shadows = keyof typeof ShadowsEnum;
